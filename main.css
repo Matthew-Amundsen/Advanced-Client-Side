@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+/*	padding: 0;*/
+}
+
+body {
+	font-family: futura, arial;
+	background-color: #109ceb;
+}
+
+#output {
+	float: left;
+	padding: 0;
+}
+
+#output li {
+	list-style: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	width: 100px;
+	margin: 3px 20px 0 0;
+
+	background-color: #221815;
+	color: #f1f0f0;
+}
+
+#output li:hover {
+	background-color: #1e323f;
+	cursor: pointer;
+}
+
+main {
+	width: 1024px;
+	margin: 0 auto;
+	min-height: 500px;
+	padding: 20px;
+}
+
+img {
+	height: 500px;
+	width: 400px;
+	float: left;
+	margin-right: 20px;
+}
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
