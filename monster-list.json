@@ -2,7 +2,8 @@
 	"name": "Totoro",
 	"height": "200cm",
 	"weight": "170kg",
-	"content": "Totoro is a giant, friendly forest spirit. He spends most of his time sleeping in a hole in a tree. He doesn't speak, instead communicating by loud bellows that, it seems, only the other Totoros and the Cat Bus can understand. He is very friendly to Mei and Satsuki. He can make trees grow much faster than normal."
+	"content": "Totoro is a giant, friendly forest spirit. He spends most of his time sleeping in a hole in a tree. He doesn't speak, instead communicating by loud bellows that, it seems, only the other Totoros and the Cat Bus can understand. He is very friendly to Mei and Satsuki. He can make trees grow much faster than normal.",
+	"image": "<img src=\"images/totoro.jpg\">"
 },{
 	"name": "Haku",
 	"height": "150cm",

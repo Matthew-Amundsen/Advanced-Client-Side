@@ -1,27 +1,28 @@
 $(document).ready(function() {
-    $('#output').html('<li>Loading...</li>');
+	$('#output').html('<li>Loading...</li>');
 
-    $.getJSON("monster-list.json", function(monsters) {
-        $('#output').empty();
+	$.getJSON("monster-list.json", function(monsters) {
+		$('#output').empty();
 
-        console.log(monsters);
+		console.log(monsters);
 
-        $.each(monsters, function(index, monster) {
-            var el = $('<li>');
-            el.text(monster.name);
-            el.attr('title', monster.content);
-            
-            $('#output').append(el);
-            
-            el.data('monster', monster);
+		$.each(monsters, function(index, monster) {
+			var el = $('<li>');
+			el.text(monster.name);
+			el.attr('title', monster.content);
+			
+			$('#output').append(el);
+			
+			el.data('monster', monster);
 
-            el.click(function(evt) {
-                var monster = $(this).data('monster');
-                $('#name').text(monster.name);
-                $('#height').text(monster.height);
-                $('#weight').text(monster.weight);
-                $('#content').text(monster.content);
-            });
-        });
-    });
+			el.click(function(evt) {
+				var monster = $(this).data('monster');
+				$('#name').text(monster.name);
+				$('#height').text(monster.height);
+				$('#weight').text(monster.weight);
+				$('#content').text(monster.content);
+				$('#image').replaceWith('<img src="images/' + monster.name + '.jpg">');
+			});
+		});
+	});
 });

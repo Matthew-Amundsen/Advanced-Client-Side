@@ -36,11 +36,17 @@ main {
 	padding: 20px;
 }
 
-img {
+#image {
 	height: 500px;
 	width: 400px;
 	float: left;
 	margin-right: 20px;
+	background-color: #fff;
+}
+
+#image img {
+	height: 500px;
+	width: 400px;
 }
 
 .cf:before,
