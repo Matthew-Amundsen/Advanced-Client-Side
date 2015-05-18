@@ -21,7 +21,7 @@ $(document).ready(function() {
 				$('#height').text(monster.height);
 				$('#weight').text(monster.weight);
 				$('#content').text(monster.content);
-				$('#image').replaceWith('<img src="images/' + monster.name + '.jpg">');
+				$('img.picture').attr('src', "images/" + monster.name + ".jpg");
 			});
 		});
 	});

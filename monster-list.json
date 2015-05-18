@@ -2,8 +2,7 @@
 	"name": "Totoro",
 	"height": "200cm",
 	"weight": "170kg",
-	"content": "Totoro is a giant, friendly forest spirit. He spends most of his time sleeping in a hole in a tree. He doesn't speak, instead communicating by loud bellows that, it seems, only the other Totoros and the Cat Bus can understand. He is very friendly to Mei and Satsuki. He can make trees grow much faster than normal.",
-	"image": "<img src=\"images/totoro.jpg\">"
+	"content": "Totoro is a giant, friendly forest spirit. He spends most of his time sleeping in a hole in a tree. He doesn't speak, instead communicating by loud bellows that, it seems, only the other Totoros and the Cat Bus can understand. He is very friendly to Mei and Satsuki. He can make trees grow much faster than normal."
 },{
 	"name": "Haku",
 	"height": "150cm",
@@ -15,7 +14,7 @@
 	"weight": "340kg",
 	"content": "Moro is a 500-year-old wolf goddess. She is an enormous wolf. Like the other ancient gods, when she speaks, her mouth doesn't match her words (Not due to bad dubbing). She adopted San after San's human parents abandoned her in an attempt to escape from Moro. Moro has two sons, which are two wolves slightly smaller than her. Moro is intelligent, wise, and strong. She has the ambition of being the one to bite off Lady Eboshi's head."
 },{
-	"name": "The Baron",
+	"name": "The-Baron",
 	"height": "50cm",
 	"weight": "20kg",
 	"content": "As the owner of the strange ‘Cat Bureau’ he is known as helper to all. He is an artisan’s statue somehow been brought to life. When Haru comes to him for help, he is happy to come to her aid. Whether it’s storming the Cat King's castle or fighting for his life, he does it all with a cane and top hat."
@@ -30,7 +29,7 @@
 	"weight": "20kg",
 	"content": "Kiki's pet black cat and best friend. He is her only companion to Koriko. Kiki seems to be the only one who can talk to Jiji. Jiji comments on Kiki's actions and balances out her slight recklessness by suggesting safer options. He is best described as cautious."
 },{
-	"name": "Cat Bus",
+	"name": "Cat-Bus",
 	"height": "260cm",
 	"weight": "320kg",
 	"content": "The cat bus roams the countryside taking passengers, usually Totoro. Its insides are just like a regular bus, with seats and windows, except they are covered with orange fur and alive. It has rats on its head and tail which act as headlights and taillights. It also has a display on its head that changes to show where it is headed."

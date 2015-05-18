@@ -36,25 +36,11 @@ main {
 	padding: 20px;
 }
 
-#image {
-	height: 500px;
-	width: 400px;
+.picture {
 	float: left;
 	margin-right: 20px;
 	background-color: #fff;
-}
-
-#image img {
+	border-radius: 10px;
 	height: 500px;
 	width: 400px;
-}
-
-.cf:before,
-.cf:after {
-	content: " ";
-	display: table;
-}
-
-.cf:after {
-	clear: both;
 }
