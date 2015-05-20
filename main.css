@@ -1,15 +1,89 @@
 * {
 	margin: 0;
-/*	padding: 0;*/
 }
 
 body {
-	font-family: futura, arial;
+	font-family: arial;
 	background-color: #109ceb;
 }
 
-#output {
+main {
+	width: 960px;
+	margin: 0 auto;
+	min-height: 500px;
+	padding: 20px;
+}
+
+/*------------------------------------------------*/
+/*--------------------- Header -------------------*/
+/*------------------------------------------------*/
+
+h1 {
+	display: inline-block;
+}
+
+nav {
+	display: inline-block;
+	float: right;
+}
+
+header button {
+	font-family: futura;
+	font-size: 0.8em;
+	border: none;
+	background-color: #109ceb;
+	color: #fff;
+	outline: none;
+	border: 1px solid #fff;
+}
+
+nav ul {
+	font-family: futura;
+	font-size: 1.4em;
+	margin-top: 28px;
+	padding: 0;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a:link {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 1em;
+}
+
+nav a:visited {
+	color: #fff;
+}
+
+nav a:hover {
+	color: #fff;
+}
+
+nav a:active {
+	color: #fff;
+}
+
+/*------------------------------------------------*/
+/*-------------------- Content -------------------*/
+/*------------------------------------------------*/
+
+#container {
+	margin-top: 20px;
+	display: table;
+	content: " ";
+}
+
+/*------------------------------------------------*/
+
+#char-selection {
+	width: 120px;
 	float: left;
+}
+
+#output {
 	padding: 0;
 }
 
@@ -29,18 +103,122 @@ body {
 	cursor: pointer;
 }
 
-main {
-	width: 1024px;
-	margin: 0 auto;
-	min-height: 500px;
-	padding: 20px;
+/*------------------------------------------------*/
+
+#char-image {
+	width: 400px;
+	float: left;
+	margin: 0 20px;
 }
 
 .picture {
-	float: left;
 	margin-right: 20px;
 	background-color: #fff;
 	border-radius: 10px;
 	height: 500px;
 	width: 400px;
 }
+
+/*------------------------------------------------*/
+
+#char-description {
+	background-color: #fff;
+	border-radius: 10px;
+	height: 490px;
+	width: 100%;
+	padding: 5px;
+	float: left;
+}
+
+/*------------------------------------------------*/
+/*-------------------- footer --------------------*/
+/*------------------------------------------------*/
+
+footer {
+	border-top: 1px solid #fff;
+	margin: 40px 0 60px 0;
+}
+
+footer ul {
+	margin-top: 5px;
+}
+footer li{
+	font-size: 0.6em;
+}
+
+/*------------------------------------------------*/
+/*---------------- Media Queries -----------------*/
+/*------------------------------------------------*/
+
+@media all and (max-width: 415px) {
+	main {
+		width: 280px;
+	}
+
+	h1 {
+		position: relative;
+		display: block;
+	}
+
+	object {
+		width: 200px;
+		margin: 0 auto;
+	}
+
+	header button {
+		float: right;
+		position: absolute;
+		top: 40px;
+		right: 20px;
+	}
+
+	header nav ul {
+		display: none;
+	}
+
+	nav li {
+		font-size: 2em;
+	}
+
+	#char-selection {
+		float: left;
+	}
+
+	#char-image {
+		margin: 0;
+		width: 280px;
+	}
+
+	.picture {
+		margin-right: 20px;
+		background-color: #fff;
+		border-radius: 10px;
+		height: 400px;
+		width: 100%;
+	}
+
+	#char-description {
+		margin: 0;
+		width: 270px;
+	}
+
+	footer {
+		font-size: .3em;
+		width: 280px;
+	}
+
+	footer nav {
+		float: none;
+		/*text-align: center;*/
+	}
+}
+
+@media all and (min-width: 1024px) {
+	header button {
+		float: right;
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
