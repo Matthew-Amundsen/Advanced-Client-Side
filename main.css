@@ -1,261 +1,77 @@
-* {
-	margin: 0;
-}
+* { margin: 0; }
 
-body {
-	font-family: arial;
-	background-color: #109ceb;
-}
+body { font-family: arial; background-color: #109ceb; }
 
-main {
-	width: 960px;
-	margin: 0 auto;
-	min-height: 500px;
-	padding: 20px;
-}
+main { width: 960px; margin: 0 auto; min-height: 500px; padding: 20px; }
+@media all and (max-width: 415px) { main { width: 280px; } }
 
 /*------------------------------------------------*/
 /*--------------------- Header -------------------*/
 /*------------------------------------------------*/
+header h1 { display: inline-block; }
+@media all and (max-width: 415px) { header h1 { position: relative; display: block; } }
+@media all and (max-width: 415px) { header object { width: 200px; margin: 0 auto; } }
+header nav { margin-top: 20px; display: block; }
+@media all and (min-width: 1024px) { header nav { display: inline-block; float: right; } }
+header nav ul { font-family: futura, arial; font-size: 1.4em; padding: 0; display: none; }
+@media all and (min-width: 1024px) { header nav ul { float: right; display: block; margin-top: -18px; } }
+header nav ul:last-child { margin-bottom: 20px; }
+header nav ul li { display: inline; font-size: 2em; }
+@media all and (min-width: 1024px) { header nav ul li { display: inline-block; margin-left: 10px; } }
+header button { background-color: #109ceb; color: white; font-size: 1.1em; border: 1px solid white; outline: none; float: right; position: absolute; top: 35px; right: 20px; }
+header a:link { display: block; }
 
-h1 {
-	display: inline-block;
-}
-
-header nav {
-	margin-top: 20px;
-	display: inline-block;
-}
-
-header button {
-	font-family: futura, arial;
-	font-size: 0.8em;
-	border: none;
-	background-color: #109ceb;
-	color: #fff;
-	outline: none;
-	border: 1px solid #fff;
-}
-
-nav ul {
-	font-family: futura, arial;
-	font-size: 1.4em;
-	padding: 0;
-}
-
-nav li {
-	display: inline;
-}
-
-header nav ul:last-child {
-	margin-bottom: 20px;
-}
-
-header nav a:link {
-	display: block;
-}
-
-nav a:link {
-	color: #fff;
-	text-decoration: none;
-	border-bottom: 1px solid #fff;
-}
-
-nav a:visited {
-	color: #fff;
-}
-
-nav a:hover {
-	color: #fff;
-}
-
-nav a:active {
-	color: #fff;
-}
+nav a:link { color: white; text-decoration: none; border-bottom: 1px solid white; }
+@media all and (min-width: 1024px) { nav a:link { border: none; } }
+nav a:visited { color: white; }
+nav a:hover { color: white; }
+nav a:active { color: white; }
 
 /*------------------------------------------------*/
 /*-------------------- Content -------------------*/
 /*------------------------------------------------*/
+#container { max-width: 100%; margin-top: 20px; display: table; content: " "; position: relative; }
 
-#container {
-	margin-top: 20px;
-	display: table;
-	content: " ";
-}
-
-h2 {
-	font-family: futura, arial;
-	font-size: 2em;
-	text-align: center;
-	color: #fff;
-	margin-bottom: 10px; 
-}
+h2 { font-family: futura, arial; font-size: 2em; text-align: center; color: white; margin-bottom: 10px; }
+@media all and (min-width: 1024px) { h2 { text-align: left; } }
 
 /*------------------------------------------------*/
+#char-selection button { width: 100%; font-size: 1.4em; border: none; border-radius: 5px; padding: 5px 10px; background-color: #221815; color: #f1f0f0; margin-bottom: 10px; cursor: pointer; }
+@media all and (min-width: 1024px) { #char-selection button { display: none; } }
 
-#char-selection {
-	width: 100%;
-	float: left;
-}
-
-#char-selection button {
-	width: 100%;
-	font-size: 1.4em;
-	border: none;
-	border-radius: 5px;
-	padding: 5px 10px;
-	background-color: #221815;
-	color: #f1f0f0;
-	margin-bottom: 10px;
-	cursor: pointer;
-}
-
-#output {
-	padding: 0;
-	display: none;
-}
-
-#output ul{
-	padding: 0;
-}
-
-#output li {
-	list-style: none;
-	border-radius: 5px;
-	padding: 10px 0;
-	text-align: center;
-	width: 100%;
-	margin: 4px auto;
-	font-size: 2em;
-	background-color: #221815;
-	color: #f1f0f0;
-}
-
-#output li:hover {
-	background-color: #1e323f;
-	cursor: pointer;
-}
+#output { padding: 0; display: none; }
+@media all and (min-width: 1024px) { #output { display: block; width: 200px; } }
+#output ul { padding: 0; }
+#output li { list-style: none; border-radius: 5px; padding: 10px 0; text-align: center; width: 100%; margin: 4px auto; font-size: 2em; background-color: #221815; color: #f1f0f0; }
+@media all and (min-width: 1024px) { #output li { font-size: 1.5em; } }
+#output li:hover { background-color: #1e323f; cursor: pointer; }
+@media all and (min-width: 1024px) { #output li { text-align: left; padding-left: 10px; float: left; margin-right: 20px; } }
 
 /*------------------------------------------------*/
+#char-image { position: absolute; top: -70px; left: 230px; }
 
-#char-image {
-	width: 100%;
-	float: left;
-	margin: 20px 20px 0 20px;
-}
-
-.picture {
-	margin-right: 20px;
-	background-color: #fff;
-	border-radius: 10px;
-	height: 500px;
-	width: 400px;
-}
+.picture { margin-right: 20px; background-color: white; border-radius: 10px; height: 500px; width: 400px; }
+@media all and (max-width: 415px) { .picture { margin-right: 20px; background-color: white; border-radius: 10px; /* dealing with the width of the image that gets put in the image div */ height: 400px; width: 100%; } }
 
 /*------------------------------------------------*/
-
-#char-description {
-	background-color: #fff;
-	border-radius: 10px;
-	height: 400px;
-	width: 100%;
-	padding: 5px;
-	float: left;
-}
+#char-description { background-color: white; border-radius: 10px; height: 400px; padding: 5px; float: left; }
+@media all and (max-width: 415px) { #char-description { margin: 0; width: 270px; } }
 
 /*------------------------------------------------*/
 /*-------------------- footer --------------------*/
 /*------------------------------------------------*/
+footer { max-width: 100%; border-top: 1px solid white; margin: 40px 0 60px 0; }
+@media all and (max-width: 415px) { footer { font-size: 1.2em; } }
+footer nav { width: 100%; }
+footer nav li { display: inline; }
 
-footer {
-	border-top: 1px solid #fff;
-	margin: 40px 0 60px 0;
-}
+footer ul { margin-top: 5px; }
 
-footer ul {
-	margin-top: 5px;
-}
-
-footer li{
-	font-size: 0.6em;
-}
+footer li { font-size: 0.6em; }
 
 /*------------------------------------------------*/
 /*---------------- Media Queries -----------------*/
 /*------------------------------------------------*/
+@media all and (min-width: 1024px) { header button { float: right; display: none; position: absolute; top: 0; right: 0; } }
 
-@media all and (max-width: 415px) {
-	main {
-		width: 280px;
-	}
-
-	h1 {
-		position: relative;
-		display: block;
-	}
-
-	object {
-		width: 200px;
-		margin: 0 auto;  /*------Not doing anything ---*/
-	}
-
-	header button {
-		float: right;
-		position: absolute; /* putting the menu button on the right side */
-		top: 40px;
-		right: 20px;
-	}
-
-	header nav ul {
-		display: none; /* hiding the menu under the button */
-	}
-
-	header nav li {
-		font-size: 2em; /* making the navigation readable on mobile */
-	}
-
-	#char-selection {
-		float: left; /* Not a damn thing */
-	}
-
-	#char-image {
-		margin: 0;
-		width: 280px; /*dealing with a left margin on the image div */
-	}
-
-	.picture {
-		margin-right: 20px;
-		background-color: #fff;
-		border-radius: 10px; /* dealing with the width of the image that gets put in the image div */
-		height: 400px;
-		width: 100%;
-	}
-
-	#char-description {
-		margin: 0;
-		width: 270px; /* keeping the info div in line with the rest of things vertically */
-	}
-
-	footer {
-		font-size: 1.2em; /* making the footer small */
-	}
-
-	footer nav {
-		width: 100%;
-
-	}
-
-	footer nav li {
-		display: inline;
-	}
-}
-
-@media all and (min-width: 1024px) {
-	header button {
-		float: right;
-		display: none;
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-
+/*# sourceMappingURL=main.css.map */

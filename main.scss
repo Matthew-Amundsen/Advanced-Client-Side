@@ -1,0 +1,321 @@
+$width-small: 415px;
+$width-medium: 768px;
+$width-large: 1024px;
+
+$color-background: #109ceb;
+$color-text: #fff;
+
+* {
+	margin: 0;
+}
+
+body {
+	font-family: arial;
+	background-color: $color-background;
+}
+
+main {
+	width: 960px;
+	margin: 0 auto;
+	min-height: 500px;
+	padding: 20px;
+
+	@media all and (max-width: $width-small) {
+		width: 280px;
+	}
+}
+
+/*------------------------------------------------*/
+/*--------------------- Header -------------------*/
+/*------------------------------------------------*/
+
+
+
+header {
+	
+	h1 {
+	display: inline-block;
+
+		@media all and (max-width: $width-small) {
+			position: relative;
+			display: block;
+		}
+
+	}
+
+	object {
+
+		@media all and (max-width: $width-small) {
+			width: 200px;
+			margin: 0 auto;
+		}
+	}
+
+	nav {
+		margin-top: 20px;
+		display: block;
+
+		@media all and (min-width: $width-large) {
+			display: inline-block;
+			float: right;
+		}
+
+		ul {
+			font-family: futura, arial;
+			font-size: 1.4em;
+			padding: 0;
+			display: none;
+
+			@media all and (min-width: $width-large) {
+				float: right;
+				display: block;
+				margin-top: -18px;
+
+			}
+
+		&:last-child {
+			margin-bottom: 20px;
+		}
+			li {
+				display: inline;
+				font-size: 2em;
+
+				@media all and (min-width: $width-large) {
+					display: inline-block;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+	
+	button {
+		background-color: $color-background;
+		color: $color-text;
+		font-size: 1.1em;
+		border: 1px solid $color-text;
+		outline: none;
+		float: right;
+		position: absolute;
+		top: 35px;
+		right: 20px;
+
+		@media all and (max-width: $width-small) {	
+			// float: right;
+			// position: absolute;
+			// top: 35px;
+			// right: 20px;
+		}
+	}
+
+	a:link {
+		display: block;
+	}
+}
+
+nav {
+	a {
+		&:link {
+			color: $color-text;
+			text-decoration: none;
+			border-bottom: 1px solid $color-text;
+
+			@media all and (min-width: $width-large) {
+				border: none;
+			}
+		}
+
+		&:visited {
+			color: $color-text;
+		}
+
+		&:hover {
+			color: $color-text;
+		}
+
+		&:active {
+			color: $color-text;
+		}
+	}
+}
+
+/*------------------------------------------------*/
+/*-------------------- Content -------------------*/
+/*------------------------------------------------*/
+
+#container {
+	max-width: 100%;
+	margin-top: 20px;
+	display: table;
+	content: " ";
+	position: relative;
+}
+
+h2 {
+	font-family: futura, arial;
+	font-size: 2em;
+	text-align: center;
+	color: $color-text;
+	margin-bottom: 10px; 
+
+	@media all and (min-width: $width-large) {
+		text-align: left;
+	}
+}
+
+/*------------------------------------------------*/
+
+#char-selection {
+	// width: 100%;
+	// float: left;
+	
+	button {
+		width: 100%;
+		font-size: 1.4em;
+		border: none;
+		border-radius: 5px;
+		padding: 5px 10px;
+		background-color: #221815;
+		color: #f1f0f0;
+		margin-bottom: 10px;
+		cursor: pointer;
+
+		@media all and (min-width: $width-large) {
+			display: none;
+		}
+	}
+}
+
+#output {
+	padding: 0;
+	display: none;
+
+	@media all and (min-width: $width-large) {
+		display: block;
+		width: 200px;
+	}
+
+	ul {
+		padding: 0;	
+	}
+
+	li {
+		list-style: none;
+		border-radius: 5px;
+		padding: 10px 0;
+		text-align: center;
+		width: 100%;
+		margin: 4px auto;
+		font-size: 2em;
+		background-color: #221815;
+		color: #f1f0f0;
+
+		@media all and (min-width: $width-large) {
+			font-size: 1.5em;
+		}
+
+		&:hover {
+			background-color: #1e323f;
+			cursor: pointer;
+		}
+
+		@media all and (min-width: $width-large) {
+			text-align: left;
+			padding-left: 10px;
+			float: left;
+			margin-right: 20px;
+		}
+	}
+}
+
+/*------------------------------------------------*/
+
+#char-image {
+	position: absolute;
+	top: -70px;
+	left: 230px;
+	// width: 100%;
+	// float: left;
+	// margin: 20px 20px 0 20px;
+
+	// @media all and (max-width: $width-small) {
+	// 	margin: 0;
+	// 	width: 280px;
+	// }
+}
+
+.picture {
+	margin-right: 20px;
+	background-color: $color-text;
+	border-radius: 10px;
+	height: 500px;
+	width: 400px;
+	
+	@media all and (max-width: $width-small) {
+		margin-right: 20px;
+		background-color: $color-text;
+		border-radius: 10px; /* dealing with the width of the image that gets put in the image div */
+		height: 400px;
+		width: 100%;
+	}
+}
+
+/*------------------------------------------------*/
+
+#char-description {
+	background-color: $color-text;
+	border-radius: 10px;
+	height: 400px;
+	padding: 5px;
+	float: left;
+
+	@media all and (max-width: $width-small) {
+		margin: 0;
+		width: 270px;
+	}
+}
+
+/*------------------------------------------------*/
+/*-------------------- footer --------------------*/
+/*------------------------------------------------*/
+
+footer {
+	max-width: 100%;
+	border-top: 1px solid $color-text;
+	margin: 40px 0 60px 0;
+
+	@media all and (max-width: $width-small) {
+		font-size: 1.2em;
+	}
+
+	nav {
+		width: 100%;
+
+		li {
+			display: inline;
+		}
+	}
+}
+
+
+footer ul {
+	margin-top: 5px;
+}
+
+footer li{
+	font-size: 0.6em;
+}
+
+/*------------------------------------------------*/
+/*---------------- Media Queries -----------------*/
+/*------------------------------------------------*/
+
+
+@media all and (min-width: 1024px) {
+	header button {
+		float: right;
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

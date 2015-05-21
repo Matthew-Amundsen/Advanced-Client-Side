@@ -44,9 +44,11 @@ $(document).ready(function() {
 	var $charButton = $("#char-selection button");
 	var $charUl = $("#char-selection ul");
 
-	$("#output").on("click", "li", function() {
-		$("#output").slideUp();
-	});
+	if ($(window).width() < 960) {
+		$("#output").on("click", "li", function() {
+			$("#output").slideUp();
+		});
+	}
 
 	$charButton.click(function() {
 		$charUl.slideToggle();
