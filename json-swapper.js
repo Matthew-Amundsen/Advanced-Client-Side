@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 			el.click(function(evt) {
 				var monster = $(this).data('monster');
-				$('#name').text(monster.name);
+				$('.name').text(monster.name);
 				$('#height').text(monster.height);
 				$('#weight').text(monster.weight);
 				$('#content').text(monster.content);
@@ -37,5 +37,18 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 		$("nav ul").css('display', '');
+	});
+});
+
+$(document).ready(function() {
+	var $charButton = $("#char-selection button");
+	var $charUl = $("#char-selection ul");
+
+	$charButton.click(function() {
+		$charUl.slideToggle();
+	});
+
+	$(window).resize(function() {
+		$("#char-selection ul").css('display', '');
 	});
 });

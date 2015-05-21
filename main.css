@@ -23,12 +23,12 @@ h1 {
 }
 
 nav {
+	margin-top: 20px;
 	display: inline-block;
-	float: right;
 }
 
 header button {
-	font-family: futura;
+	font-family: futura, arial;
 	font-size: 0.8em;
 	border: none;
 	background-color: #109ceb;
@@ -38,9 +38,8 @@ header button {
 }
 
 nav ul {
-	font-family: futura;
+	font-family: futura, arial;
 	font-size: 1.4em;
-	margin-top: 28px;
 	padding: 0;
 }
 
@@ -51,7 +50,8 @@ nav li {
 nav a:link {
 	color: #fff;
 	text-decoration: none;
-	margin-left: 1em;
+	display: block;
+	border-bottom: 1px solid #fff;
 }
 
 nav a:visited {
@@ -76,24 +76,49 @@ nav a:active {
 	content: " ";
 }
 
+h2 {
+	font-family: futura, arial;
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+}
+
 /*------------------------------------------------*/
 
 #char-selection {
-	width: 120px;
+	width: 100%;
 	float: left;
 }
 
+#char-selection button {
+	width: 100%;
+	font-size: 1.4em;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	background-color: #221815;
+	color: #f1f0f0;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
 #output {
+	padding: 0;
+	display: none;
+}
+
+#output ul{
 	padding: 0;
 }
 
 #output li {
 	list-style: none;
 	border-radius: 5px;
-	padding: 5px 10px;
-	width: 100px;
-	margin: 3px 20px 0 0;
-
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+	margin: 4px auto;
+	font-size: 2em;
 	background-color: #221815;
 	color: #f1f0f0;
 }
@@ -106,9 +131,9 @@ nav a:active {
 /*------------------------------------------------*/
 
 #char-image {
-	width: 400px;
+	width: 100%;
 	float: left;
-	margin: 0 20px;
+	margin: 20px 20px 0 20px;
 }
 
 .picture {
@@ -162,54 +187,54 @@ footer li{
 
 	object {
 		width: 200px;
-		margin: 0 auto;
+		margin: 0 auto;  /*------Not doing anything ---*/
 	}
 
 	header button {
 		float: right;
-		position: absolute;
+		position: absolute; /* putting the menu button on the right side */
 		top: 40px;
 		right: 20px;
 	}
 
 	header nav ul {
-		display: none;
+		display: none; /* hiding the menu under the button */
 	}
 
 	nav li {
-		font-size: 2em;
+		font-size: 2em; /* making the navigation readable on mobile */
 	}
 
 	#char-selection {
-		float: left;
+		float: left; /* Not a damn thing */
 	}
 
 	#char-image {
 		margin: 0;
-		width: 280px;
+		width: 280px; /*dealing with a left margin on the image div */
 	}
 
 	.picture {
 		margin-right: 20px;
 		background-color: #fff;
-		border-radius: 10px;
+		border-radius: 10px; /* dealing with the width of the image that gets put in the image div */
 		height: 400px;
 		width: 100%;
 	}
 
 	#char-description {
 		margin: 0;
-		width: 270px;
+		width: 270px; /* keeping the info div in line with the rest of things vertically */
 	}
 
 	footer {
-		font-size: .3em;
+		font-size: .3em; /* making the footer small */
 		width: 280px;
 	}
 
 	footer nav {
 		float: none;
-		/*text-align: center;*/
+		text-align: center; /* I dont think it does anything useful */
 	}
 }
 
