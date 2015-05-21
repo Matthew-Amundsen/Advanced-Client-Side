@@ -22,7 +22,7 @@ h1 {
 	display: inline-block;
 }
 
-nav {
+header nav {
 	margin-top: 20px;
 	display: inline-block;
 }
@@ -47,10 +47,17 @@ nav li {
 	display: inline;
 }
 
+header nav ul:last-child {
+	margin-bottom: 20px;
+}
+
+header nav a:link {
+	display: block;
+}
+
 nav a:link {
 	color: #fff;
 	text-decoration: none;
-	display: block;
 	border-bottom: 1px solid #fff;
 }
 
@@ -81,6 +88,7 @@ h2 {
 	font-size: 2em;
 	text-align: center;
 	color: #fff;
+	margin-bottom: 10px; 
 }
 
 /*------------------------------------------------*/
@@ -98,7 +106,7 @@ h2 {
 	padding: 5px 10px;
 	background-color: #221815;
 	color: #f1f0f0;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	cursor: pointer;
 }
 
@@ -149,7 +157,7 @@ h2 {
 #char-description {
 	background-color: #fff;
 	border-radius: 10px;
-	height: 490px;
+	height: 400px;
 	width: 100%;
 	padding: 5px;
 	float: left;
@@ -167,6 +175,7 @@ footer {
 footer ul {
 	margin-top: 5px;
 }
+
 footer li{
 	font-size: 0.6em;
 }
@@ -201,7 +210,7 @@ footer li{
 		display: none; /* hiding the menu under the button */
 	}
 
-	nav li {
+	header nav li {
 		font-size: 2em; /* making the navigation readable on mobile */
 	}
 
@@ -228,13 +237,16 @@ footer li{
 	}
 
 	footer {
-		font-size: .3em; /* making the footer small */
-		width: 280px;
+		font-size: 1.2em; /* making the footer small */
 	}
 
 	footer nav {
-		float: none;
-		text-align: center; /* I dont think it does anything useful */
+		width: 100%;
+
+	}
+
+	footer nav li {
+		display: inline;
 	}
 }
 
