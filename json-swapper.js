@@ -18,9 +18,9 @@ $(document).ready(function() {
 			el.click(function(evt) {
 				var monster = $(this).data('monster');
 				$('.name').text(monster.name);
-				$('#height').text(monster.height);
-				$('#weight').text(monster.weight);
-				$('#content').text(monster.content);
+				$('.height').text(monster.height);
+				$('.weight').text(monster.weight);
+				$('.content').text(monster.content);
 				$('img.picture').attr('src', "images/" + monster.name + ".jpg");
 			});
 		});
@@ -29,14 +29,14 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 	var $navButton = $("nav button");
-	var $navUl = $("nav ul");
+	var $navUl = $("header nav ul");
 
 	$navButton.click(function() {
 		$navUl.slideToggle();
 	});
 
 	$(window).resize(function() {
-		$("nav ul").css('display', '');
+		$("header nav ul").css('display', '');
 	});
 });
 
@@ -44,7 +44,7 @@ $(document).ready(function() {
 	var $charButton = $("#char-selection button");
 	var $charUl = $("#char-selection ul");
 
-	if ($(window).width() < 960) {
+	if ($(window).width() < 770) {
 		$("#output").on("click", "li", function() {
 			$("#output").slideUp();
 		});

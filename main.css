@@ -1,77 +1,343 @@
-* { margin: 0; }
+/* line 8, main.scss */
+* {
+  margin: 0; }
 
-body { font-family: arial; background-color: #109ceb; }
+/* line 12, main.scss */
+body {
+  font-family: arial;
+  background-color: #109ceb; }
 
-main { width: 960px; margin: 0 auto; min-height: 500px; padding: 20px; }
-@media all and (max-width: 415px) { main { width: 280px; } }
+/* line 17, main.scss */
+main {
+  width: 960px;
+  margin: 0 auto;
+  min-height: 500px;
+  padding: 20px; }
+  @media all and (max-width: 768px) {
+    /* line 17, main.scss */
+    main {
+      width: 718px; } }
+  @media all and (max-width: 414px) {
+    /* line 17, main.scss */
+    main {
+      width: 414px; } }
 
 /*------------------------------------------------*/
 /*--------------------- Header -------------------*/
 /*------------------------------------------------*/
-header h1 { display: inline-block; }
-@media all and (max-width: 415px) { header h1 { position: relative; display: block; } }
-@media all and (max-width: 415px) { header object { width: 200px; margin: 0 auto; } }
-header nav { margin-top: 20px; display: block; }
-@media all and (min-width: 1024px) { header nav { display: inline-block; float: right; } }
-header nav ul { font-family: futura, arial; font-size: 1.4em; padding: 0; display: none; }
-@media all and (min-width: 1024px) { header nav ul { float: right; display: block; margin-top: -18px; } }
-header nav ul:last-child { margin-bottom: 20px; }
-header nav ul li { display: inline; font-size: 2em; }
-@media all and (min-width: 1024px) { header nav ul li { display: inline-block; margin-left: 10px; } }
-header button { background-color: #109ceb; color: white; font-size: 1.1em; border: 1px solid white; outline: none; float: right; position: absolute; top: 35px; right: 20px; }
-header a:link { display: block; }
+/* line 38, main.scss */
+header {
+  height: 100px; }
+  @media all and (min-width: 1024px) {
+    /* line 40, main.scss */
+    header header button {
+      float: right;
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0; } }
+  /* line 50, main.scss */
+  header h1 {
+    display: inline-block; }
+    @media all and (max-width: 414px) {
+      /* line 50, main.scss */
+      header h1 {
+        position: relative;
+        display: block; } }
+  @media all and (max-width: 414px) {
+    /* line 60, main.scss */
+    header object {
+      width: 200px;
+      margin: 0 auto; } }
+  /* line 68, main.scss */
+  header nav {
+    margin-top: 20px;
+    display: block; }
+    @media all and (min-width: 1024px) {
+      /* line 68, main.scss */
+      header nav {
+        display: inline-block;
+        float: right; } }
+    /* line 77, main.scss */
+    header nav ul {
+      font-family: futura, arial;
+      font-size: 1.4em;
+      padding: 0;
+      display: none; }
+      @media all and (min-width: 1024px) {
+        /* line 77, main.scss */
+        header nav ul {
+          float: right;
+          display: block;
+          margin-top: -18px; } }
+      /* line 90, main.scss */
+      header nav ul:last-child {
+        margin-bottom: 20px; }
+      /* line 93, main.scss */
+      header nav ul li {
+        display: inline;
+        font-size: 2em; }
+        @media all and (min-width: 1024px) {
+          /* line 93, main.scss */
+          header nav ul li {
+            display: inline-block;
+            margin-left: 10px; } }
+  /* line 105, main.scss */
+  header button {
+    background-color: #109ceb;
+    color: white;
+    font-size: 1.1em;
+    border: 1px solid white;
+    outline: none;
+    float: right;
+    position: absolute;
+    top: 35px;
+    right: 20px; }
+    @media all and (min-width: 1024px) {
+      /* line 105, main.scss */
+      header button {
+        float: right;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0; } }
+  /* line 125, main.scss */
+  header a:link {
+    display: block; }
 
-nav a:link { color: white; text-decoration: none; border-bottom: 1px solid white; }
-@media all and (min-width: 1024px) { nav a:link { border: none; } }
-nav a:visited { color: white; }
-nav a:hover { color: white; }
-nav a:active { color: white; }
+/* line 132, main.scss */
+nav a:link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white; }
+  @media all and (min-width: 1024px) {
+    /* line 132, main.scss */
+    nav a:link {
+      border: none; } }
+/* line 142, main.scss */
+nav a:visited {
+  color: white; }
+/* line 146, main.scss */
+nav a:hover {
+  color: white; }
+/* line 150, main.scss */
+nav a:active {
+  color: white; }
 
 /*------------------------------------------------*/
 /*-------------------- Content -------------------*/
 /*------------------------------------------------*/
-#container { max-width: 100%; margin-top: 20px; display: table; content: " "; position: relative; }
-
-h2 { font-family: futura, arial; font-size: 2em; text-align: center; color: white; margin-bottom: 10px; }
-@media all and (min-width: 1024px) { h2 { text-align: left; } }
+/* line 160, main.scss */
+#container {
+  max-width: 100%;
+  margin-top: 20px;
+  display: table;
+  content: " ";
+  position: relative; }
+  /* line 167, main.scss */
+  #container h2 {
+    font-family: futura, arial;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px; }
+    @media all and (min-width: 1024px) {
+      /* line 167, main.scss */
+      #container h2 {
+        text-align: left; } }
+  @media all and (min-width: 414px) {
+    /* line 160, main.scss */
+    #container {
+      width: 440px; } }
 
 /*------------------------------------------------*/
-#char-selection button { width: 100%; font-size: 1.4em; border: none; border-radius: 5px; padding: 5px 10px; background-color: #221815; color: #f1f0f0; margin-bottom: 10px; cursor: pointer; }
-@media all and (min-width: 1024px) { #char-selection button { display: none; } }
+/* line 187, main.scss */
+#char-selection {
+  float: left;
+  margin-right: 20px; }
+  /* line 192, main.scss */
+  #char-selection button {
+    width: 100%;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #221815;
+    color: #f1f0f0;
+    margin-bottom: 10px;
+    cursor: pointer; }
+    @media all and (min-width: 1024px) {
+      /* line 192, main.scss */
+      #char-selection button {
+        display: none; } }
+  @media all and (max-width: 768px) {
+    /* line 187, main.scss */
+    #char-selection {
+      width: 100%; } }
+  @media all and (max-width: 414px) {
+    /* line 187, main.scss */
+    #char-selection {
+      width: 280px; } }
+  @media all and (min-width: 414px) {
+    /* line 187, main.scss */
+    #char-selection {
+      width: 440px; } }
 
-#output { padding: 0; display: none; }
-@media all and (min-width: 1024px) { #output { display: block; width: 200px; } }
-#output ul { padding: 0; }
-#output li { list-style: none; border-radius: 5px; padding: 10px 0; text-align: center; width: 100%; margin: 4px auto; font-size: 2em; background-color: #221815; color: #f1f0f0; }
-@media all and (min-width: 1024px) { #output li { font-size: 1.5em; } }
-#output li:hover { background-color: #1e323f; cursor: pointer; }
-@media all and (min-width: 1024px) { #output li { text-align: left; padding-left: 10px; float: left; margin-right: 20px; } }
+/* line 222, main.scss */
+#output {
+  padding: 0;
+  display: none; }
+  @media all and (min-width: 1024px) {
+    /* line 222, main.scss */
+    #output {
+      display: block;
+      width: 200px; } }
+  @media all and (max-width: 480px) {
+    /* line 222, main.scss */
+    #output {
+      width: 480px; } }
+  /* line 235, main.scss */
+  #output ul {
+    padding: 0; }
+  /* line 239, main.scss */
+  #output li {
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    margin: 4px auto;
+    font-size: 2em;
+    background-color: #221815;
+    color: #f1f0f0; }
+    @media all and (min-width: 1024px) {
+      /* line 239, main.scss */
+      #output li {
+        font-size: 1.5em; } }
+    @media all and (min-width: 414px) {
+      /* line 239, main.scss */
+      #output li {
+        margin-left: 0;
+        width: 440px; } }
+    /* line 259, main.scss */
+    #output li:hover {
+      background-color: #1e323f;
+      cursor: pointer; }
+    @media all and (min-width: 1024px) {
+      /* line 239, main.scss */
+      #output li {
+        text-align: left;
+        padding-left: 10px;
+        float: left;
+        margin-right: 20px; } }
 
 /*------------------------------------------------*/
-#char-image { position: absolute; top: -70px; left: 230px; }
+/* line 275, main.scss */
+#char-image {
+  float: left;
+  margin-top: 3px; }
+  @media all and (max-width: 414px) {
+    /* line 275, main.scss */
+    #char-image {
+      width: 280px; } }
+  @media all and (min-width: 414px) {
+    /* line 275, main.scss */
+    #char-image {
+      width: 440px;
+      margin: 0 auto; } }
 
-.picture { margin-right: 20px; background-color: white; border-radius: 10px; height: 500px; width: 400px; }
-@media all and (max-width: 415px) { .picture { margin-right: 20px; background-color: white; border-radius: 10px; /* dealing with the width of the image that gets put in the image div */ height: 400px; width: 100%; } }
+/* line 289, main.scss */
+.picture {
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 10px;
+  height: 500px;
+  width: 400px; }
+  @media all and (max-width: 414px) {
+    /* line 289, main.scss */
+    .picture {
+      margin-right: 20px;
+      background-color: white;
+      border-radius: 10px;
+      /* dealing with the width of the image that gets put in the image div */
+      height: 400px;
+      width: 100%; } }
+  @media all and (max-width: 768px) {
+    /* line 289, main.scss */
+    .picture {
+      width: 350px;
+      height: 450px; } }
+  @media all and (max-width: 414px) {
+    /* line 289, main.scss */
+    .picture {
+      width: 280px;
+      height: 380px; } }
 
 /*------------------------------------------------*/
-#char-description { background-color: white; border-radius: 10px; height: 400px; padding: 5px; float: left; }
-@media all and (max-width: 415px) { #char-description { margin: 0; width: 270px; } }
+/* line 317, main.scss */
+#char-description {
+  background-color: white;
+  border-radius: 10px;
+  height: 490px;
+  padding: 5px;
+  float: left;
+  width: 320px;
+  margin-top: 55px; }
+  /* line 326, main.scss */
+  #char-description th {
+    text-align: left;
+    vertical-align: top; }
+  @media all and (max-width: 414px) {
+    /* line 317, main.scss */
+    #char-description {
+      margin: 0;
+      width: 270px; } }
+  @media all and (max-width: 768px) {
+    /* line 317, main.scss */
+    #char-description {
+      width: 345px;
+      height: 440px; } }
+  @media all and (max-width: 414px) {
+    /* line 317, main.scss */
+    #char-description {
+      width: 270px;
+      height: 380px;
+      margin-top: 10px; } }
 
 /*------------------------------------------------*/
 /*-------------------- footer --------------------*/
 /*------------------------------------------------*/
-footer { max-width: 100%; border-top: 1px solid white; margin: 40px 0 60px 0; }
-@media all and (max-width: 415px) { footer { font-size: 1.2em; } }
-footer nav { width: 100%; }
-footer nav li { display: inline; }
-
-footer ul { margin-top: 5px; }
-
-footer li { font-size: 0.6em; }
-
-/*------------------------------------------------*/
-/*---------------- Media Queries -----------------*/
-/*------------------------------------------------*/
-@media all and (min-width: 1024px) { header button { float: right; display: none; position: absolute; top: 0; right: 0; } }
+/* line 352, main.scss */
+footer {
+  max-width: 100%;
+  border-top: 1px solid white;
+  margin: 40px 0 60px 0; }
+  @media all and (max-width: 414px) {
+    /* line 352, main.scss */
+    footer {
+      font-size: 0.6em; } }
+  /* line 361, main.scss */
+  footer nav {
+    width: 100%; }
+    /* line 364, main.scss */
+    footer nav ul {
+      margin: 5px 40px 0 0;
+      text-align: right; }
+      @media all and (max-width: 414px) {
+        /* line 364, main.scss */
+        footer nav ul {
+          margin: 20px; } }
+    /* line 373, main.scss */
+    footer nav li {
+      display: inline;
+      font-size: 1.4em; }
+      @media all and (max-width: 768px) {
+        /* line 373, main.scss */
+        footer nav li {
+          font-size: 1.4em; } }
+      @media all and (max-width: 1024px) {
+        /* line 373, main.scss */
+        footer nav li {
+          font-size: 1.4em; } }
 
 /*# sourceMappingURL=main.css.map */

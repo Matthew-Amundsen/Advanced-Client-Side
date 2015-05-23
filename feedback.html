@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+	<title>Ghibli Monsters - Feedback</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main-1.css">
+</head>
+<body>
+			
+	<header>
+		<h1><object data="images/logo-white.svg" width="200"></object></h1>
+			<nav>
+				<button>MENU</button>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">Films</a></li>
+					<li><a href="index.html">Characters</a></li>
+					<li><a href="index.html">Forum</a></li>
+				</ul>
+			</nav>
+	</header>
+
+	<main>	
+		<div id="container">
+			<form method="POST" action="http://brettt.yoobee.net.nz/formtest/" id="feedback-form" novalidate>
+					<label for="name" >YOUR FULL NAME</label>
+					<div id="name-error" class="danger"></div>
+					<input id="name" name="name" type="text" required class="fv-minlength-2">
+
+					<label for="email" >YOUR EMAIL</label>
+					<div id="email-error" class="danger"></div>
+					<input id="email" name="email" type="email" required>
+
+					<label for="comments">ADDITIONAL COMMENTS OR REQUESTS</label>
+					<div id="comments-error" class="danger"></div>
+					<textarea id="comments" name="comments" required></textarea>
+				
+					<input class="button" type="submit" value="SUBMIT">
+			</form>
+		</div>
+	</main>
+
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Site Map</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="feedback.html">Feedback</a></li>
+				</ul>
+			</nav>
+		</footer>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="form-validation-kit.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    addFormValidation(document.querySelector("#feedback-form"));
+});
+</script>
+
+</body>
+</html>
