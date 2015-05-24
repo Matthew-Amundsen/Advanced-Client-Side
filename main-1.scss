@@ -127,13 +127,14 @@ nav {
 @media all and (max-width: 768px) {
 
 	footer, header, main {
-		width: 750px;
+		width: 90%;
 	}
 
 	header {
 
 		nav {
 			float: left;
+			width: 105%;
 		}
 
 		object {
@@ -214,7 +215,7 @@ nav {
 @media all and (max-width: 480px) {
 
 	footer, header, main {
-		width: 100%;
+		width: 90%;
 	}
 
 	header {
@@ -254,4 +255,75 @@ nav {
 	}
 }
 
+/*-----------------------------------------------------------*/
+
+#container {
+	width: 90%;
+	margin: 40px auto 0 auto;
+
+	form {
+		width: 100%;
+		font-size: 1.3em;
+
+		label {
+			padding: 5px;
+			box-sizing: border-box;
+			font-weight: bold;
+		}
+
+		input {
+			border-radius: 5px;
+			width: 100%;
+			box-sizing: border-box;
+			height: 40px;
+			font-size: 22px;
+			padding: 4px 8px;
+			background-color: white;
+			outline: 0;
+			border: 2px solid white;
+			margin: 3px 0 0 0;
+		}
+
+		textarea {
+			border-radius: 5px;
+			width: 100%;
+			box-sizing: border-box;
+			resize: none;
+			height: 200px;
+			max-height: 200px;
+			padding: 8px 8px;
+			background-color: white;
+			border: 2px solid white;
+			outline: 0;
+			font-size: 0.9em;
+			margin: 3px 0 -5px 0;
+		}
+
+		.danger {
+			font-size: 0.9em;
+			text-align: center;
+			min-width: 160px;
+			background-color: red;
+			color: white;
+			float: right;
+			border-radius: 5px;
+			margin-top: -15px;
+			padding: 15px 5px 0px 5px;
+		}
+
+		.invalid {
+			border: 2px solid red; 
+			
+		}
+
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		.button {
+			margin-top: 20px;
+			cursor: pointer;
+		}
+	}
+}
 

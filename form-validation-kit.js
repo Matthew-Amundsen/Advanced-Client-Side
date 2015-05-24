@@ -70,7 +70,7 @@ function addFormValidation(formElement) {
 		}
 
 		if (hasMaxLength(el) && el.value.length < el.minLength) {
-			error = "must be " + el.minLength + " or less characters long.";
+			error = "must be " + el.minLength + " or more characters long.";
 		}
 
 		if (hasMin(el) && parseInt(el.value, 10) < parseInt(el.min, 10)) {
